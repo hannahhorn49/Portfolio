@@ -1,0 +1,21 @@
+name: Dockerized Test Workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: test-code
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    container: continuumio/anaconda3:2024.06-1
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v3
+      - name: Test code in Docker container	    
+        run: |
+          pytest --verbose test_myclassifiers.py
+      - name: Pylint code in Docker container
+        if: always()
+        run: |
+          git config --system --add safe.directory $(pwd) # to work around "dubious ownership" error: https://github.com/actions/checkout/issues/1169
+          pylint -v $(git ls-files "*.py") --exit-zero # always return 0 (non-error) so pylint warnings/errors do not error this step out
