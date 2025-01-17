@@ -25,3 +25,11 @@ This project uses a dataset that contains instances representing passengers aboa
 This project uses a dataset from the Kaggle March Machine Learning Mania 2022 - Men’s competition. After some preprocessing, the input file we will be using contains game matchups for 334 tournament games from the last 5 years.
 
 [Project Details](./MarchMadnessWinner_Classification/pa7.ipynb)
+
+## COVID-19 Dataset
+This project uses a dataset that tracked information from the beginning of the pandemic in 2020. Using R, this report analyzes trends, metrics, and creates visuals to explore how COVID-19 impacted different countries. 
+
+[Final Report Details](./COVID_R_Project/covid_project.md)
+
+## MyWordle 2.0 Game
+This project aimed to create a browser-based adaptation of the popular Wordle game with an exciting twist—-players can choose their preferred difficulty level (easy, medium, or difficult) for the secret word. This version retains the fun of guessing a 5-letter word in 6 attempts while offering a customizable challenge for users of all skill levels. Perfect for Wordle enthusiasts looking for a fresh spin on the classic game!
