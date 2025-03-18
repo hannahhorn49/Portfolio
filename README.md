@@ -1,3 +1,8 @@
+## Movie Recommendation Website
+This project aimed to create a website where users could create an account, enter their available streaming platforms, enter a movie title, and by clicking the "Get Recommendations" button, it will only output similar movies that the user has access to stream. 
+Here is a link to our deployed website, https://free2memovies.com/
+Note: This is an ongoing project and will be updated as it is completed. 
+
 ## Diabetes Dataset
 This dataset originated from Kaggle and is a collection of medical and demographic data from patients, along with their diabetes status, positive (1) or negative (0).
 
